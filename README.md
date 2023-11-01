@@ -5,9 +5,9 @@
 
 The extension is compiled for S60v3 only ,
 
-use _fontloader.pyd for PyS60 1.45,
+use [_fontloader.pyd](./_fontloader.pyd) for PyS60 1.45,
 
-use kf__fontloader.pyd PyS60 2.0
+use [kf__fontloader.pyd](./kf__fontloader.pyd) PyS60 2.0
 
 ### Basic usage
 
