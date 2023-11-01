@@ -1,0 +1,19 @@
+targettype dll
+TARGET	       kf__fontloader.pyd
+TARGETPATH     \sys\bin
+
+SYSTEMINCLUDE \epoc32\include
+SYSTEMINCLUDE \epoc32\include\stdapis
+SYSTEMINCLUDE \epoc32\include\python25
+
+USERINCLUDE   .
+
+LIBRARY python25.lib
+LIBRARY euser.lib
+LIBRARY cone.lib
+LIBRARY bafl.lib
+LIBRARY ws32.lib //bafl.lib
+
+source fontloader.cpp
+
+CAPABILITY ReadDeviceData WriteDeviceData SwEvent NetworkServices LocalServices ReadUserData WriteUserData Location UserEnvironment

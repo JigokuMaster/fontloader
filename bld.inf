@@ -1,0 +1,6 @@
+PRJ_PLATFORMS 
+gcce
+
+PRJ_MMPFILES 
+fontloader.mmp
+kf_fontloader.mmp 

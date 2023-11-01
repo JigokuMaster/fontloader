@@ -1,0 +1,19 @@
+targettype dll
+TARGET	       _fontloader.pyd
+TARGETPATH     \sys\bin
+
+SYSTEMINCLUDE \epoc32\include
+SYSTEMINCLUDE \epoc32\include\libc
+SYSTEMINCLUDE \epoc32\include\python
+
+USERINCLUDE   .
+
+LIBRARY python222.lib
+LIBRARY euser.lib
+LIBRARY cone.lib
+LIBRARY bafl.lib
+LIBRARY ws32.lib //bafl.lib
+
+source fontloader.cpp
+
+CAPABILITY  PowerMgmt ReadDeviceData TrustedUI ProtServ SwEvent WriteDeviceData NetworkServices SurroundingsDD Location LocalServices ReadUserData WriteUserData UserEnvironment  
